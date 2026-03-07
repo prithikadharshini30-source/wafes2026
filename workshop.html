@@ -1,169 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Post Tension Workshop | WAFES 2026</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: #ffffff;
-        }
+<title>Post-Tension Workshop | WAFES 2026</title>
 
-        .container {
-            width: 85%;
-            max-width: 1000px;
-            margin: auto;
-            padding: 50px 0;
-        }
+<style>
 
-        h1 {
-            text-align: center;
-            font-size: 38px;
-            color: #ff6a00;
-            margin-bottom: 20px;
-        }
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:black;
+color:white;
+line-height:1.6;
+}
 
-        h2 {
-            margin-top: 35px;
-            color: #ff6a00;
-            border-left: 4px solid #ff6a00;
-            padding-left: 10px;
-        }
+/* HEADER */
 
-        p, li {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #dddddd;
-        }
+header{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(180deg,#111,#000);
+border-bottom:2px solid orange;
+}
 
-        ul {
-            padding-left: 20px;
-        }
+header h1{
+font-size:3rem;
+color:orange;
+margin-bottom:10px;
+}
 
-        li {
-            margin-bottom: 10px;
-        }
+header p{
+color:#ccc;
+font-size:1.2rem;
+}
 
-        .highlight-box {
-            background-color: #111111;
-            padding: 20px;
-            border-left: 4px solid #ff6a00;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
+/* CONTAINER */
 
-        .register-btn {
-            display: block;
-            width: 220px;
-            margin: 40px auto;
-            padding: 12px;
-            text-align: center;
-            background-color: #ff6a00;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-            transition: 0.3s ease;
-        }
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
 
-        .register-btn:hover {
-            background-color: #ff8c42;
-            transform: scale(1.05);
-        }
+/* INFO BOXES */
 
-        .back-link {
-            text-align: center;
-            margin-top: 20px;
-        }
+.info-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-bottom:40px;
+}
 
-        .back-link a {
-            color: #ff6a00;
-            text-decoration: none;
-            font-size: 18px;
-        }
+.info-box{
+background:#111;
+padding:20px;
+border-radius:10px;
+text-align:center;
+border:1px solid #222;
+transition:0.3s;
+}
 
-        .back-link a:hover {
-            color: #ff9d42;
-            text-decoration: underline;
-        }
-    </style>
+.info-box:hover{
+border-color:orange;
+box-shadow:0 0 10px orange;
+}
+
+.info-box h3{
+color:orange;
+margin-bottom:5px;
+}
+
+/* CONTENT CARDS */
+
+.card{
+background:#111;
+padding:25px;
+border-radius:10px;
+border:1px solid #222;
+margin-bottom:30px;
+transition:0.3s;
+}
+
+.card:hover{
+border-color:orange;
+box-shadow:0 0 10px orange;
+}
+
+.card h2{
+color:orange;
+margin-top:0;
+}
+
+ul{
+padding-left:20px;
+}
+
+/* BUTTON */
+
+.back-btn{
+display:inline-block;
+margin-top:30px;
+padding:12px 25px;
+background:orange;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+transition:0.3s;
+}
+
+.back-btn:hover{
+background:#ffb347;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #222;
+color:#777;
+margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header h1{
+font-size:2rem;
+}
+
+header p{
+font-size:1rem;
+}
+
+.container{
+padding:30px 15px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
+<header>
+<h1>🔧 POST-TENSION WORKSHOP</h1>
+<p>Advancing Structural Efficiency in Modern Construction</p>
+</header>
+
 <div class="container">
 
-    <h1>Post Tension Workshop</h1>
+<!-- EVENT INFO -->
 
-    <h2>Registration</h2>
-    <ul>
-        <li>Open for individual participation.</li>
-    </ul>
+<div class="info-grid">
 
-    <h2>Objective</h2>
-    <p>
-        This workshop focuses on delivering an in-depth understanding of the Post-Tensioning System,
-        an advanced prestressing technique widely used in modern structural engineering.
-        The session is designed to strengthen conceptual clarity and technical insight into
-        high-performance concrete systems.
-    </p>
+<div class="info-box">
+<h3>👤 Participation</h3>
+<p>Individual</p>
+</div>
 
-    <h2>Session Highlights</h2>
-    <ul>
-        <li>Fundamentals of prestressed concrete</li>
-        <li>Principle of post-tensioning and induced compressive stresses</li>
-        <li>Stress distribution and load transfer mechanism</li>
-        <li>Components: high-tensile steel tendons, anchor heads, wedges, and ducts</li>
-        <li>Flexural behavior and deflection control</li>
-        <li>Crack mitigation and serviceability performance</li>
-        <li>Comparison between conventional RCC and post-tensioned structures</li>
-        <li>Applications in long-span slabs, flat slabs, transfer beams, bridge decks, and high-rise buildings</li>
-        <li>Structural efficiency, durability, and economic advantages</li>
-    </ul>
+<div class="info-box">
+<h3>⏱ Duration</h3>
+<p>45 – 60 Minutes</p>
+</div>
 
-    <h2>Duration</h2>
-    <ul>
-        <li>The workshop will be conducted for 45 minutes to 1 hour.</li>
-    </ul>
+<div class="info-box">
+<h3>🎓 Type</h3>
+<p>Technical Workshop</p>
+</div>
 
-    <h2>Participation Guidelines</h2>
-    <ul>
-        <li>Participants must maintain professional discipline throughout the session.</li>
-        <li>Active engagement during the technical discussion segment is encouraged.</li>
-        <li>Mobile devices should be kept on silent mode.</li>
-    </ul>
-
-    <h2>Learning Outcomes</h2>
-    <div class="highlight-box">
-        <ul>
-            <li>Understand the mechanics of pre-compression in concrete</li>
-            <li>Gain insight into structural optimization using post-tension systems</li>
-            <li>Develop technical knowledge relevant to design considerations and construction practices</li>
-            <li>Enhance conceptual understanding of advanced concrete technology</li>
-        </ul>
-    </div>
-
-    <h2>Certification</h2>
-    <ul>
-        <li>Participation certificates will be provided to all attendees.</li>
-    </ul>
-
-    <h2>Note</h2>
-    <ul>
-        <li>Instructions provided during the session must be strictly followed.</li>
-    </ul>
-
-   <a href="https://forms.gle/D3djdrisc8imSuxW9" class="btn" target="_blank">Register</a>
-
-    <div class="back-link">
-        <a href="../index.html">⬅ Back to Home</a>
-    </div>
+<div class="info-box">
+<h3>🏗 Topic</h3>
+<p>Post-Tension Systems</p>
+</div>
 
 </div>
+
+<!-- EVENT DESCRIPTION -->
+
+<div class="card">
+
+<h2>Event Description</h2>
+
+<p>
+This workshop focuses on providing an understanding of the
+<strong>Post-Tensioning System</strong>, an advanced prestressing technique widely used in modern structural engineering.
+</p>
+
+<p>
+Participants will gain insight into the principles, components, and structural
+advantages of post-tensioned systems and their applications in contemporary construction.
+</p>
+
+</div>
+
+<!-- SESSION DETAILS -->
+
+<div class="card">
+
+<h2>Workshop Session</h2>
+
+<p>The session will cover key concepts including:</p>
+
+<ul>
+<li>Fundamentals of prestressed concrete</li>
+<li>Principle of post-tensioning and induced compressive stresses</li>
+<li>Stress distribution and load transfer mechanism</li>
+<li>Components such as high-tensile steel tendons, anchor heads, wedges, and ducts</li>
+<li>Flexural behavior and deflection control</li>
+<li>Crack mitigation and serviceability performance</li>
+<li>Comparison between conventional RCC and post-tensioned structures</li>
+<li>Applications in slabs, beams, bridge decks, and high-rise buildings</li>
+</ul>
+
+<p><strong>Duration:</strong> 45 minutes to 1 hour.</p>
+
+</div>
+
+<!-- GUIDELINES -->
+
+<div class="card">
+
+<h2>Guidelines</h2>
+
+<ul>
+<li>Registration is open for <strong>individual participation</strong>.</li>
+<li>Participants must maintain professional discipline throughout the session.</li>
+<li>Active engagement during the technical discussion is encouraged.</li>
+<li>Mobile devices should be kept on silent mode.</li>
+<li>Participation certificates will be provided to all attendees.</li>
+<li>Instructions given during the session must be strictly followed.</li>
+</ul>
+
+</div>
+
+<a class="back-btn" href="../index.html">⬅ Back to Events</a>
+
+</div>
+
+<footer>
+WAFES 2026 • Engineering Fest
+</footer>
 
 </body>
 </html>
