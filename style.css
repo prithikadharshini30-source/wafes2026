@@ -338,15 +338,22 @@ grid-template-columns:1fr;
 }
 
 .countdown-container{
-gap:15px;
+display:flex;
+justify-content:center;
+gap:8px;
+flex-wrap:nowrap;   /* prevents second line */
 }
 
 .time-box{
-padding:15px 20px;
+padding:10px 12px;
+min-width:60px;
 }
 
 .time-box span{
-font-size:1.8rem;
+font-size:1.4rem;
 }
 
+.time-box p{
+font-size:10px;
 }
+
