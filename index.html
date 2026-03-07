@@ -11,7 +11,34 @@
     <p>Water • Air • Fire • Earth • Space</p>
     <p>March 17, 2026</p>
 </header>
+<section id="countdown" class="phoenix-countdown">
 
+<h2 class="section-title">WAFES Begins In</h2>
+
+<div class="countdown-container">
+
+<div class="time-box">
+<span id="days">00</span>
+<p>DAYS</p>
+</div>
+
+<div class="time-box">
+<span id="hours">00</span>
+<p>HOURS</p>
+</div>
+
+<div class="time-box">
+<span id="minutes">00</span>
+<p>MINUTES</p>
+</div>
+
+<div class="time-box">
+<span id="seconds">00</span>
+<p>SECONDS</p>
+</div>
+
+</div>
+</section>
 <nav>
     <a href="#about">About</a>
     <a href="#schedule">Schedule</a>
@@ -198,8 +225,30 @@ designed to challenge your skills and expand your knowledge.
 </footer>
 
 <img src="phoenix.png" class="phoenix">
+<script>
 
+const eventDate = new Date("March 17, 2026 09:00:00").getTime();
+
+setInterval(function() {
+
+const now = new Date().getTime();
+const distance = eventDate - now;
+
+const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+
+</script>
 </body>
 
 </html>
+
 
