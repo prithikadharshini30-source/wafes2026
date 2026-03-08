@@ -1,188 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Poster & Reel Showcase | WAFES 2026</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: #ffffff;
-        }
+<title>Poster & Reel Showcase | WAFES 2026</title>
 
-        .container {
-            width: 85%;
-            max-width: 1000px;
-            margin: auto;
-            padding: 50px 0;
-        }
+<style>
 
-        h1 {
-            text-align: center;
-            font-size: 40px;
-            color: #ff6a00;
-            margin-bottom: 20px;
-        }
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:black;
+color:white;
+line-height:1.6;
+}
 
-        h2 {
-            margin-top: 35px;
-            color: #ff6a00;
-            border-left: 4px solid #ff6a00;
-            padding-left: 10px;
-        }
+/* HEADER */
 
-        p, li {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #dddddd;
-        }
+header{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(180deg,#111,#000);
+border-bottom:2px solid orange;
+}
 
-        ul {
-            padding-left: 20px;
-        }
+header h1{
+font-size:3rem;
+color:orange;
+margin-bottom:10px;
+}
 
-        li {
-            margin-bottom: 10px;
-        }
+header p{
+color:#ccc;
+font-size:1.2rem;
+}
 
-        .register-btn {
-            display: block;
-            width: 220px;
-            margin: 40px auto;
-            padding: 12px;
-            text-align: center;
-            background-color: #ff6a00;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-            transition: 0.3s ease;
-        }
+/* CONTAINER */
 
-        .register-btn:hover {
-            background-color: #ff8c42;
-            transform: scale(1.05);
-        }
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
 
-        .back-link {
-            text-align: center;
-            margin-top: 20px;
-        }
+/* INFO GRID */
 
-        .back-link a {
-            color: #ff6a00;
-            text-decoration: none;
-            font-size: 18px;
-        }
+.info-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-bottom:40px;
+}
 
-        .back-link a:hover {
-            color: #ff9d42;
-            text-decoration: underline;
-        }
-    </style>
+.info-box{
+background:#111;
+padding:20px;
+border-radius:10px;
+text-align:center;
+border:1px solid #222;
+transition:0.3s;
+}
+
+.info-box:hover{
+border-color:orange;
+box-shadow:0 0 10px orange;
+}
+
+.info-box h3{
+color:orange;
+margin-bottom:5px;
+}
+
+/* CARDS */
+
+.card{
+background:#111;
+padding:25px;
+border-radius:10px;
+border:1px solid #222;
+margin-bottom:30px;
+transition:0.3s;
+}
+
+.card:hover{
+border-color:orange;
+box-shadow:0 0 10px orange;
+}
+
+.card h2{
+color:orange;
+margin-top:0;
+}
+
+ul{
+padding-left:20px;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+display:inline-block;
+margin-top:30px;
+padding:12px 25px;
+background:orange;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+transition:0.3s;
+}
+
+.back-btn:hover{
+background:#ffb347;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #222;
+color:#777;
+margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header h1{
+font-size:2rem;
+}
+
+header p{
+font-size:1rem;
+}
+
+.container{
+padding:30px 15px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
+<header>
+<h1>🎨 POSTER & REEL SHOWCASE</h1>
+<p>Create. Express. Inspire.</p>
+</header>
+
 <div class="container">
 
-    <h1>Poster & Reel Showcase</h1>
+<!-- EVENT INFO -->
 
-    <h2>Team Formation</h2>
-    <ul>
-        <li>Each team can have 1–4 participants.</li>
-    </ul>
+<div class="info-grid">
 
-    <h2>Objective</h2>
-    <ul>
-        <li>Participants must present a digital poster or short reel based on the given theme.</li>
-    </ul>
+<div class="info-box">
+<h3>👥 Team Size</h3>
+<p>1 – 4 Members</p>
+</div>
 
-    <h2>Submission & Presentation</h2>
-    <ul>
-        <li>Entries must be created digitally.</li>
-        <li>Participants must showcase their work using laptops or mobile phones.</li>
-        <li>No physical charts or printed materials are required.</li>
-    </ul>
+<div class="info-box">
+<h3>🎨 Category</h3>
+<p>Poster / Reel</p>
+</div>
 
-    <h2>Poster Category</h2>
+<div class="info-box">
+<h3>📱 Format</h3>
+<p>Digital Submission</p>
+</div>
 
-    <h3 style="color:#ff6a00;">Format</h3>
-    <ul>
-        <li>Digital poster (JPEG/PNG/PDF format).</li>
-        <li>Clear visuals and readable text.</li>
-    </ul>
-
-    <h3 style="color:#ff6a00;">Rules</h3>
-    <ul>
-        <li>Poster must clearly reflect the theme.</li>
-        <li>Content should be original.</li>
-        <li>Plagiarism or copied designs will lead to disqualification.</li>
-    </ul>
-
-    <h2>Reel Category</h2>
-
-    <h3 style="color:#ff6a00;">Duration</h3>
-    <ul>
-        <li>Reel must be within 30–60 seconds.</li>
-    </ul>
-
-    <h3 style="color:#ff6a00;">Format</h3>
-    <ul>
-        <li>Vertical format (9:16 preferred).</li>
-        <li>Clear audio and visuals required.</li>
-    </ul>
-
-    <h3 style="color:#ff6a00;">Rules</h3>
-    <ul>
-        <li>Content must strictly follow the theme.</li>
-        <li>Use of inappropriate or copyrighted content is not allowed.</li>
-        <li>Reel must be original and created by the team.</li>
-    </ul>
-
-    <h2>Evaluation Criteria</h2>
-
-    <h3 style="color:#ff6a00;">For Poster:</h3>
-    <ul>
-        <li>Creativity and originality</li>
-        <li>Relevance to theme</li>
-        <li>Visual impact and clarity</li>
-        <li>Effectiveness of message</li>
-    </ul>
-
-    <h3 style="color:#ff6a00;">For Reel:</h3>
-    <ul>
-        <li>Creativity and storytelling</li>
-        <li>Technical quality</li>
-        <li>Engagement and impact</li>
-        <li>Relevance to theme</li>
-    </ul>
-
-    <h2>Winning Criteria</h2>
-    <ul>
-        <li>The team with the highest total score in their respective category will be declared the winner.</li>
-    </ul>
-
-    <h2>Disqualification</h2>
-    <ul>
-        <li>Use of unfair practices or plagiarism will lead to disqualification.</li>
-    </ul>
-
-    <h2>Judgement</h2>
-    <ul>
-        <li>Judges’ decision will be final and binding.</li>
-    </ul>
-
-    <a href="https://forms.gle/GQEqpPAKpvbL6JX58" class="btn" target="_blank">Register</a>
-
-    <div class="back-link">
-        <a href="../index.html">⬅ Back to Home</a>
-    </div>
+<div class="info-box">
+<h3>🎯 Goal</h3>
+<p>Creative Storytelling</p>
+</div>
 
 </div>
+
+<!-- DESCRIPTION -->
+
+<div class="card">
+
+<h2>Event Description</h2>
+
+<p>
+<strong>Poster & Reel Showcase</strong> is a creative event where participants present
+their ideas through a <strong>digital poster</strong> or a <strong>short reel</strong>
+based on a theme given during the event.
+</p>
+
+<p>
+The competition encourages <strong>creativity, visual communication,
+and impactful storytelling</strong>.
+</p>
+
+</div>
+
+<!-- ROUND DETAILS -->
+
+<div class="card">
+
+<h2>Round Details</h2>
+
+<h3>Showcase Round</h3>
+
+<p>
+Participants will create and present their digital poster or reel based
+on the theme provided during the event. Teams must explain the concept
+and creative approach behind their work.
+</p>
+
+</div>
+
+<!-- GUIDELINES -->
+
+<div class="card">
+
+<h2>Guidelines</h2>
+
+<ul>
+<li><strong>Team Size:</strong> 1–4 members</li>
+<li>Entries must be created digitally and showcased using laptops or mobile phones.</li>
+<li>No physical charts or printed materials are required.</li>
+</ul>
+
+<h3>Poster Category</h3>
+
+<ul>
+<li>Digital poster in <strong>JPEG / PNG / PDF</strong> format</li>
+<li>Visuals and text must be clear and relevant to the theme</li>
+</ul>
+
+<h3>Reel Category</h3>
+
+<ul>
+<li><strong>Duration:</strong> 30–60 seconds</li>
+<li>Vertical format <strong>(9:16 preferred)</strong></li>
+<li>Clear audio and visuals required</li>
+<li>Content must be original and based on the given theme</li>
+</ul>
+
+<p>
+⚠ Plagiarism or inappropriate content will lead to <strong>disqualification</strong>.
+</p>
+
+<p>
+The team with the highest score based on <strong>creativity, clarity, and impact</strong>
+will be declared the winner.
+</p>
+
+<p><strong>Judges’ decision will be final and binding.</strong></p>
+
+</div>
+
+<a class="back-btn" href="../index.html">⬅ Back to Events</a>
+
+</div>
+
+<footer>
+WAFES 2026 • Engineering Fest
+</footer>
 
 </body>
 </html>
