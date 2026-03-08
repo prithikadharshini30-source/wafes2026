@@ -2,31 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-
-background:
-radial-gradient(circle at top,
-rgba(255,120,0,0.15),
-black 60%);
-
-color:white;
-
-}
-@keyframes flicker{
-
-0%{opacity:1}
-50%{opacity:0.85}
-100%{opacity:1}
-
+    background: #0f0f0f;
+    color: white;
 }
 
-header h1{
-animation:flicker 3s infinite;
-}
 /* ================= HEADER ================= */
 
 header {
@@ -417,4 +401,5 @@ box-shadow:
 0 0 40px var(--main-orange);
 
 }
+
 
