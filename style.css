@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -359,47 +359,4 @@ font-size:10px;
 :root{
 --main-orange:#ff7a00;
 }
-
-/* glowing titles */
-
-h1,h2{
-color:var(--main-orange);
-text-shadow:
-0 0 5px var(--main-orange),
-0 0 15px var(--main-orange),
-0 0 30px var(--main-orange);
-}
-
-/* glowing buttons */
-
-button,
-.register-btn,
-.back-btn{
-
-background:var(--main-orange);
-color:black;
-border:none;
-padding:12px 25px;
-font-weight:bold;
-border-radius:6px;
-
-box-shadow:
-0 0 10px var(--main-orange),
-0 0 25px var(--main-orange);
-
-transition:0.3s;
-}
-
-button:hover,
-.register-btn:hover,
-.back-btn:hover{
-
-transform:scale(1.05);
-
-box-shadow:
-0 0 20px var(--main-orange),
-0 0 40px var(--main-orange);
-
-}
-
 
