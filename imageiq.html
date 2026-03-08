@@ -1,160 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Image IQ | WAFES 2026</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: #ffffff;
-        }
+<title>Image IQ | WAFES 2026</title>
 
-        .container {
-            width: 85%;
-            max-width: 1000px;
-            margin: auto;
-            padding: 50px 0;
-        }
+<style>
 
-        h1 {
-            text-align: center;
-            font-size: 40px;
-            color: #ff6a00;
-            margin-bottom: 20px;
-        }
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:black;
+color:white;
+line-height:1.6;
+}
 
-        h2 {
-            margin-top: 35px;
-            color: #ff6a00;
-            border-left: 4px solid #ff6a00;
-            padding-left: 10px;
-        }
+/* HEADER */
 
-        p, li {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #dddddd;
-        }
+header{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(180deg,#111,#000);
+border-bottom:2px solid orange;
+}
 
-        ul {
-            padding-left: 20px;
-        }
+header h1{
+font-size:3rem;
+color:orange;
+margin-bottom:10px;
+}
 
-        li {
-            margin-bottom: 10px;
-        }
+header p{
+color:#ccc;
+font-size:1.2rem;
+}
 
-        .register-btn {
-            display: block;
-            width: 220px;
-            margin: 40px auto;
-            padding: 12px;
-            text-align: center;
-            background-color: #ff6a00;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-            transition: 0.3s ease;
-        }
+/* CONTAINER */
 
-        .register-btn:hover {
-            background-color: #ff8c42;
-            transform: scale(1.05);
-        }
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
 
-        .back-link {
-            text-align: center;
-            margin-top: 20px;
-        }
+/* INFO GRID */
 
-        .back-link a {
-            color: #ff6a00;
-            text-decoration: none;
-            font-size: 18px;
-        }
+.info-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-bottom:40px;
+}
 
-        .back-link a:hover {
-            color: #ff9d42;
-            text-decoration: underline;
-        }
-    </style>
+.info-box{
+background:#111;
+padding:20px;
+border-radius:10px;
+text-align:center;
+border:1px solid #222;
+transition:0.3s;
+}
+
+.info-box:hover{
+border-color:orange;
+box-shadow:0 0 10px orange;
+}
+
+.info-box h3{
+color:orange;
+margin-bottom:5px;
+}
+
+/* CARDS */
+
+.card{
+background:#111;
+padding:25px;
+border-radius:10px;
+border:1px solid #222;
+margin-bottom:30px;
+transition:0.3s;
+}
+
+.card:hover{
+border-color:orange;
+box-shadow:0 0 10px orange;
+}
+
+.card h2{
+color:orange;
+margin-top:0;
+}
+
+ul{
+padding-left:20px;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+display:inline-block;
+margin-top:30px;
+padding:12px 25px;
+background:orange;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+transition:0.3s;
+}
+
+.back-btn:hover{
+background:#ffb347;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #222;
+color:#777;
+margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header h1{
+font-size:2rem;
+}
+
+header p{
+font-size:1rem;
+}
+
+.container{
+padding:30px 15px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
+<header>
+<h1>🧠 IMAGE IQ</h1>
+<p>See the Clue. Decode the Connection.</p>
+</header>
+
 <div class="container">
 
-    <h1>Image IQ</h1>
+<!-- EVENT INFO -->
 
-    <h2>Team Formation</h2>
-    <ul>
-        <li>Each team can have 2–4 participants.</li>
-    </ul>
+<div class="info-grid">
 
-    <h2>Objective</h2>
-    <ul>
-        <li>Participants must identify the common connection or concept linking a set of given images.</li>
-    </ul>
+<div class="info-box">
+<h3>👥 Team Size</h3>
+<p>2 – 4 Members</p>
+</div>
 
-    <h2>Materials</h2>
-    <ul>
-        <li>Images will be displayed on screen.</li>
-        <li>Answer sheets will be provided.</li>
-        <li>No additional materials or electronic devices are allowed.</li>
-    </ul>
+<div class="info-box">
+<h3>🎯 Event Type</h3>
+<p>Visual Reasoning</p>
+</div>
 
-    <h2>Time Limit</h2>
-    <ul>
-        <li>Each question must be answered within the specified time (e.g., 60–90 seconds).</li>
-    </ul>
+<div class="info-box">
+<h3>🧠 Skills</h3>
+<p>Observation & Logic</p>
+</div>
 
-    <h2>Event Format</h2>
-    <ul>
-        <li>Each round will contain 3–5 related images.</li>
-        <li>Teams must identify the correct connection between them.</li>
-    </ul>
-
-    <h2>Rules</h2>
-    <ul>
-        <li>Answers must be clear and specific.</li>
-        <li>Discussion is allowed only within the team.</li>
-        <li>No external help is permitted.</li>
-    </ul>
-
-    <h2>Evaluation Criteria</h2>
-    <ul>
-        <li>Accuracy of the answer</li>
-        <li>Speed of response</li>
-        <li>Logical correctness</li>
-    </ul>
-
-    <h2>Winning Criteria</h2>
-    <ul>
-        <li>The team with the highest total score at the end of all rounds will be declared the winner.</li>
-    </ul>
-
-    <h2>Disqualification</h2>
-    <ul>
-        <li>Use of unauthorized materials or unfair practices will lead to disqualification.</li>
-    </ul>
-
-    <h2>Judgement</h2>
-    <ul>
-        <li>Judges’ decision will be final and binding.</li>
-    </ul>
-
-    <a href="https://forms.gle/N59PdUMirotVu2ZA7" class="btn" target="_blank">Register</a>
-
-    <div class="back-link">
-        <a href="../index.html">⬅ Back to Home</a>
-    </div>
+<div class="info-box">
+<h3>🏆 Goal</h3>
+<p>Identify Image Connections</p>
+</div>
 
 </div>
+
+<!-- DESCRIPTION -->
+
+<div class="card">
+
+<h2>Event Description</h2>
+
+<p>
+<strong>Image IQ</strong> is a visual reasoning challenge where teams analyze a
+set of images and identify the common concept or connection linking them.
+</p>
+
+<p>
+The event tests <strong>observation skills, logical thinking, and quick decision-making</strong>.
+Participants must carefully study visual clues and determine the correct link between images.
+</p>
+
+</div>
+
+<!-- ROUND DETAILS -->
+
+<div class="card">
+
+<h2>Round Details</h2>
+
+<h3>Phase 1 – Memory Round</h3>
+
+<p>
+Teams will be shown a set of images for a limited time. Participants must
+observe and remember them carefully to answer related questions.
+</p>
+
+<h3>Phase 2 – Image Connection Round</h3>
+
+<p>
+Teams will be given a group of images and must identify the
+<strong>common concept or connection</strong> linking them.
+</p>
+
+</div>
+
+<!-- GUIDELINES -->
+
+<div class="card">
+
+<h2>Guidelines</h2>
+
+<ul>
+<li><strong>Team Size:</strong> 2–4 members</li>
+<li>Images will be displayed on the screen and answer sheets will be provided.</li>
+<li>Electronic devices or external help are not permitted.</li>
+<li>Discussion is allowed only within the team.</li>
+<li>The team with the highest total score will be declared the winner.</li>
+</ul>
+
+<p><strong>Judges’ decision will be final and binding.</strong></p>
+
+</div>
+
+<a class="back-btn" href="../index.html">⬅ Back to Events</a>
+
+</div>
+
+<footer>
+WAFES 2026 • Engineering Fest
+</footer>
 
 </body>
 </html>
