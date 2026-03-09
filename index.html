@@ -198,7 +198,57 @@ designed to challenge your skills and expand your knowledge.
 </div>
 </section>
 
+<div class="team-button">
+    <button onclick="toggleTeam()">🔥 Meet the Team</button>
+</div>
 
+<section id="teamSection" class="team-section">
+
+<h2>Team Behind the Event</h2>
+
+<div class="team-grid">
+
+<div>
+<h3>Symposium Coordinators</h3>
+<p>
+Harini<br>
+Sai Bhooshan<br>
+Rakhesh<br>
+Kanaka Varshini
+</p>
+</div>
+
+<div>
+<h3>Website Development</h3>
+<p>Prithika Dharshini</p>
+</div>
+
+<div>
+<h3>Video Editing</h3>
+<p>Tamilarasi</p>
+</div>
+
+<div>
+<h3>Poster Editing</h3>
+<p>
+Nadeedha<br>
+Sai Bhooshan<br>
+Sabari<br>
+Yuvan
+</p>
+</div>
+
+<div>
+<h3>Souvenir</h3>
+<p>
+Nadeedha<br>
+Tamilarasi
+</p>
+</div>
+
+</div>
+
+</section>
 <!-- ================= CONTACT ================= -->
 
 <section id="contact">
@@ -250,9 +300,22 @@ document.getElementById("seconds").innerHTML = seconds;
 },1000);
 
 </script>
+<script>
+function toggleTeam() {
+let section = document.getElementById("teamSection");
+
+if(section.classList.contains("show")){
+section.classList.remove("show");
+}
+else{
+section.classList.add("show");
+}
+}
+</script>
 </body>
 
 </html>
+
 
 
 
