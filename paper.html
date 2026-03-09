@@ -1,122 +1,249 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Paper Presentation | WAFES 2026</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #000000;
-            color: #ffffff;
-        }
+<title>Paper Presentation | WAFES 2026</title>
 
-        .container {
-            width: 85%;
-            max-width: 1000px;
-            margin: auto;
-            padding: 50px 0;
-        }
+<style>
 
-        h1 {
-            text-align: center;
-            font-size: 40px;
-            color: #ff6a00;
-            margin-bottom: 10px;
-        }
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:black;
+color:white;
+line-height:1.6;
+}
 
-        .tagline {
-            text-align: center;
-            font-size: 18px;
-            margin-bottom: 30px;
-            color: #ff9d42;
-            font-style: italic;
-        }
+/* HEADER */
 
-        h2 {
-            margin-top: 40px;
-            color: #ff6a00;
-            border-bottom: 2px solid #ff6a00;
-            padding-bottom: 5px;
-        }
+header{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(180deg,#111,#000);
+border-bottom:2px solid orange;
+}
 
-        p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #dddddd;
-        }
+header h1{
+font-size:3rem;
+color:orange;
+margin-bottom:10px;
+}
 
-        ul {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #dddddd;
-        }
+header p{
+color:#ccc;
+font-size:1.2rem;
+}
 
-        li {
-            margin-bottom: 12px;
-        }
+/* CONTAINER */
 
-        .register-btn {
-            display: block;
-            width: 220px;
-            margin: 40px auto;
-            padding: 12px;
-            text-align: center;
-            background-color: #ff6a00;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-            transition: 0.3s ease;
-        }
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
 
-        .register-btn:hover {
-            background-color: #ff8c42;
-            transform: scale(1.05);
-        }
+/* INFO GRID */
 
-        .back-link {
-            text-align: center;
-            margin-top: 20px;
-        }
+.info-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-bottom:40px;
+}
 
-        .back-link a {
-            color: #ff6a00;
-            text-decoration: none;
-            font-size: 18px;
-        }
+.info-box{
+background:#111;
+padding:20px;
+border-radius:10px;
+text-align:center;
+border:1px solid #222;
+transition:0.3s;
+}
 
-        .back-link a:hover {
-            color: #ff9d42;
-            text-decoration: underline;
-        }
-    </style>
+.info-box:hover{
+border-color:orange;
+box-shadow:0 0 10px orange;
+}
+
+.info-box h3{
+color:orange;
+margin-bottom:5px;
+}
+
+/* CARDS */
+
+.card{
+background:#111;
+padding:25px;
+border-radius:10px;
+border:1px solid #222;
+margin-bottom:30px;
+transition:0.3s;
+}
+
+.card:hover{
+border-color:orange;
+box-shadow:0 0 10px orange;
+}
+
+.card h2{
+color:orange;
+margin-top:0;
+}
+
+ul{
+padding-left:20px;
+}
+
+/* BACK BUTTON */
+
+.back-btn{
+display:inline-block;
+margin-top:30px;
+padding:12px 25px;
+background:orange;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+transition:0.3s;
+}
+
+.back-btn:hover{
+background:#ffb347;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #222;
+color:#777;
+margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header h1{
+font-size:2rem;
+}
+
+header p{
+font-size:1rem;
+}
+
+.container{
+padding:30px 15px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
+<header>
+<h1>🎤 PAPER PRESENTATION</h1>
+<p>Innovative Engineering Solutions for Smart and Sustainable Futures</p>
+</header>
+
 <div class="container">
 
-    <h1>Paper Presentation</h1>
-    <div class="tagline">Innovative Engineering Solutions for Smart and Sustainable Futures</div>
+<!-- EVENT INFO -->
 
-    <h2>Event Details</h2>
-    <ul>
-        <li>Topic based on <strong>Innovative Engineering Solutions for Smart and Sustainable Futures</strong>.</li>
-        <li>Team size: 1 to 4 members.</li>
-        <li>Abstract submission is mandatory.</li>
-        <li>Presentation time: 8 minutes + 2 minutes Q&A.</li>
-        <li>Decision of judges will be final.</li>
-    </ul>
+<div class="info-grid">
 
-    <a href="https://forms.gle/YTh8qnEzkk6d4FWK6" class="btn" target="_blank">Register</a>
-    <div class="back-link">
-        <a href="../index.html">⬅ Back to Home</a>
-    </div>
+<div class="info-box">
+<h3>👥 Team Size</h3>
+<p>1 – 4 Members</p>
+</div>
+
+<div class="info-box">
+<h3>🎯 Event Type</h3>
+<p>Technical Presentation</p>
+</div>
+
+<div class="info-box">
+<h3>🧠 Skills</h3>
+<p>Research & Innovation</p>
+</div>
+
+<div class="info-box">
+<h3>🏆 Goal</h3>
+<p>Present Innovative Ideas</p>
+</div>
 
 </div>
+
+<!-- DESCRIPTION -->
+
+<div class="card">
+
+<h2>Event Description</h2>
+
+<p>
+The <strong>Paper Presentation</strong> event provides a platform for participants
+to present innovative ideas and solutions that address real-world
+engineering challenges and contribute to <strong>smart and sustainable development</strong>.
+</p>
+
+</div>
+
+<!-- ROUND DETAILS -->
+
+<div class="card">
+
+<h2>Round Details</h2>
+
+<h3>Phase 1 – Abstract Submission</h3>
+
+<p>
+Participants must submit an abstract during registration outlining their
+topic related to <strong>Innovative Engineering Solutions for Smart and Sustainable Futures</strong>.
+</p>
+
+<h3>Phase 2 – Paper Presentation</h3>
+
+<p>
+Teams will present their work before the judges. Each team will be given
+<strong>8 minutes for presentation</strong> followed by <strong>2 minutes for questions and discussion</strong>.
+</p>
+
+</div>
+
+<!-- GUIDELINES -->
+
+<div class="card">
+
+<h2>Guidelines</h2>
+
+<ul>
+<li><strong>Team Size:</strong> 1–4 members</li>
+<li>Abstract submission is mandatory during registration.</li>
+<li>The presentation topic must relate to <strong>Innovative Engineering Solutions for Smart and Sustainable Futures</strong>.</li>
+<li>Topics incorporating <strong>WAFES (Water, Air, Fire, Earth, Space)</strong> concepts are appreciated.</li>
+<li><strong>Presentation Time:</strong> 8 minutes + 2 minutes Q&A session.</li>
+<li>Participants may use PowerPoint or other presentation tools.</li>
+<li>The decision of the judges will be final and binding.</li>
+</ul>
+
+</div>
+
+<a class="back-btn" href="../index.html">⬅ Back to Events</a>
+
+</div>
+
+<footer>
+WAFES 2026 • Engineering Fest
+</footer>
 
 </body>
 </html>
