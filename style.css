@@ -16,7 +16,14 @@ body {
 header {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(90deg, #ff4500, #ff8800);
+
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("images/stranger-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
     position: relative;
     overflow: hidden;
 }
@@ -31,7 +38,6 @@ header p {
     margin-top: 10px;
     opacity: 0.9;
 }
-
 /* ================= NAV ================= */
 
 nav {
@@ -359,4 +365,5 @@ font-size:10px;
 :root{
 --main-orange:#ff7a00;
 }
+
 
