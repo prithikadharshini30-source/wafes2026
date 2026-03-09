@@ -25,7 +25,7 @@ header {
     background-position: center;
 
     position: relative;
-    overflow: hidden;
+   
 }
 
 header h1 {
@@ -437,6 +437,7 @@ box-shadow:0 0 15px rgba(255,120,0,0.6);
 color:#ff8800;
 margin-bottom:10px;
 }
+
 
 
 
