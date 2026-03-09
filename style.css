@@ -365,6 +365,78 @@ font-size:10px;
 :root{
 --main-orange:#ff7a00;
 }
+.team-button{
+text-align:center;
+margin:60px 0;
+}
+
+.team-button button{
+background:linear-gradient(45deg,#ff4500,#ff8800);
+border:none;
+padding:14px 28px;
+font-size:18px;
+color:white;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 0 10px #ff6600;
+}
+
+.team-button button:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px #ff6600;
+}
+
+/* Hidden by default */
+
+.team-section{
+max-height:0;
+overflow:hidden;
+transition:max-height 0.6s ease;
+background:#111;
+margin:20px;
+border-radius:10px;
+padding:0 20px;
+}
+
+/* When opened */
+
+.team-section.show{
+max-height:800px;
+padding:30px;
+}
+
+.team-section h2{
+text-align:center;
+color:#ff8800;
+margin-bottom:25px;
+}
+
+/* Grid like Netflix cards */
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.team-grid div{
+background:#1a1a1a;
+padding:20px;
+border-radius:8px;
+transition:0.3s;
+}
+
+.team-grid div:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px rgba(255,120,0,0.6);
+}
+
+.team-grid h3{
+color:#ff8800;
+margin-bottom:10px;
+}
 
 
 
